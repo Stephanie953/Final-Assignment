@@ -1,0 +1,13 @@
+body{
+    margin: 0px;
+}
+
+#logo{
+    margin: 16px;
+    padding: 8px;
+}
+
+.wrapper{
+    background-color: black;
+    margin-top: 30%;
+}
