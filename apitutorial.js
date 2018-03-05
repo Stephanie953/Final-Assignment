@@ -9,15 +9,15 @@ $(document).ready(function() {
             url: "https://itunes.apple.com/search?entity=song&limit=5&term=" + artist
         }).done(response => {
             let res = JSON.parse(response);
-          
+
             let resultsarray = res.results;
-            
+
             for (let i = 0; i < resultsarray.length; i++) {
                 songs.push(res.results[i].trackName);
                 albums.push(res.results[i].collectionName);
                 songPrices.push(res.results[i].trackPrice);
             }
-      
+
             console.log(songs);
             console.log(albums);
             console.log(songPrices);
@@ -40,7 +40,7 @@ $(document).ready(function() {
         //     var ctx = document.getElementById("myChart").getContext("2d");
 
         //     var chart = new Chart(ctx, {
-        //         // the type of chart 
+        //         // the type of chart
         //         type: 'line',
 
         //         //the data for the chart
@@ -53,16 +53,8 @@ $(document).ready(function() {
         //                 borderColor: "rgb(255, 99, 132)"
         //             }]
         //         },
-                
+
         //         //configuration options go here
         //         options: {}
 
         //     });
-        
-
-      
-
-
-   
-
-
