@@ -34,19 +34,26 @@ $(document).ready(function() {
             $("table").append(table);
         });
     });
-});
 
-$(function() {
-    $("#albumButton").on("click", function(){
+    $("#albumButton").on("click", function() {
         let album = $("#album").val();
-        let albumPicture = [];
-    
+        let albumResult;
+
         $.ajax({
-            url: "https://itunes.apple.com/search?entity=song&limit=1&term=" + album 
+            url: "https://itunes.apple.com/search?entity=album&limit=1&term=" + album 
         }).done(response => {
-            let resAlbum = JSON.parse(response);
-    
-            console.log("http://is1.mzstatic.com/image/thumb/Music7/v4/aa/50/8a/aa508a91-9729-1f94-f4b6-e371cf2157df/source/100x100bb.jpg");
+            let res = JSON.parse(response);
+
+            let resultsarray = res.results;
+            for (let i = 0; i < resultsarray.length; i++) {
+                albumResult = res.results[i].artworkUrl100;
+            }
+
+
+            let albumPhoto = "<img src='" + albumResult +"' alt='Mountain View'>";
+
+            $("#imageAlbum").empty();
+            $("#imageAlbum").append(albumPhoto);
         });
     });
 });
