@@ -65,6 +65,58 @@ Forces carousel image to be 100% width and not max width of 100%
   justify-content: center;
 }
 
+/*First API */
+.inputFirstApi {
+  background-color: white;
+  width: 42%; 
+  position: relative;
+  height: 15%;
+}
+
+.searchItems {
+   display: inline-block;
+}
+
+#textinform {
+   min-width: 150px;
+   font-size: 16px;
+   padding: 5px;
+   background-color: transparent;
+   color: black;
+   opacity: 0.8;
+   text-align: left;
+   margin: 10px 20px;
+}
+
+.firstAPI {
+   position: relative;
+}
+
+#artists, #noOfSongs {
+   width: 250px;
+   margin-left: 20px;
+   font-size: 14px;
+}
+
+#submitButton {
+   margin-left: 20px;
+   height: 31px;
+   padding-top: 4px;
+   padding-bottom: 4px;
+   font-size: 14px;
+   font-weight: bold;
+   background-color:rgb(0,123,255);
+   border-color: rgb(0,123,255);
+}
+
+#table {
+   position: absolute;
+   margin-left: 20px;
+   font-size: 12px;
+   margin-top: 20px;
+}
+
+/*footer*/
 #footer {
   margin-top: 2%;
   background-color: black;

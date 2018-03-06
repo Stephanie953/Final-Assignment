@@ -106,10 +106,55 @@
       <div class="col">API #2</div>
       <div class="w-100"></div>
       <div class="col">
-        <!--Insert API #1 here  -->
+      <!-- Container for first API -->
+      <container class="containerFirstApi">
+        <div class="inputFirstApi"> 
+
+            <!-- Artist name input -->
+            <div class = "searchItems">
+                <div>
+                    <span class="badge badge-light" id="textinform">Name of artist:</span>
+                </div>
+                <input class="form-control form-control-sm" id="artists" type="text" placeholder="e.g. Elton John">
+            </div> 
+
+            <!-- Dropdown menu -->
+            <div class = "searchItems">
+                <label for="noOfSongs" class="badge badge-light" id="textinform">No of songs:</label>
+                <div>
+                <select class="form-control form-control-sm" id="noOfSongs">
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                    <option>25</option>
+                </select>
+                </div>
+            </div> 
+
+            <!-- Button -->
+            <div class = "searchItems">
+                <button type="button" id="submitButton" class="btn btn-primary">Go!</button> 
+            </div>
+
+            <table class='table table-striped' id="table"></table>
+
+        </div>
+        
+    </container>
       </div>
       <div class="col">
-        <!--Insert API #2 here  -->
+        <!-- Second API -->
+        <div class = "searchItems">
+            <div>
+                <span class="badge badge-light" id="textinform">Find Album:</span>
+            </div>
+            <input class="form-control form-control-sm" id="album" type="text" placeholder="e.g. Back to Black">
+              <!-- Button -->
+            <div class = "searchItems">
+              <button type="button" id="AlbumButton" class="btn btn-primary">Find Album!</button> 
+            </div>
+        </div> 
       </div>
     </div>
 
@@ -167,9 +212,12 @@
 
 </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- My javascript file -->
+    <script src="apitutorial.js"></script>
 
   </body>
 
