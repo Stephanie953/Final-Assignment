@@ -34,7 +34,22 @@ $(document).ready(function() {
             $("table").append(table);
         });
     });
-
 });
+
+$(function() {
+    $("#albumButton").on("click", function(){
+        let album = $("#album").val();
+        let albumPicture = [];
+    
+        $.ajax({
+            url: "https://itunes.apple.com/search?entity=song&limit=1&term=" + album 
+        }).done(response => {
+            let resAlbum = JSON.parse(response);
+    
+            console.log("http://is1.mzstatic.com/image/thumb/Music7/v4/aa/50/8a/aa508a91-9729-1f94-f4b6-e371cf2157df/source/100x100bb.jpg");
+        });
+    });
+});
+
 
 
