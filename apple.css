@@ -68,7 +68,7 @@ Forces carousel image to be 100% width and not max width of 100%
 /*First API */
 .inputFirstApi {
   background-color: white;
-  width: 42%; 
+  width: 42%;
   position: relative;
   height: 15%;
 }
@@ -120,13 +120,14 @@ Forces carousel image to be 100% width and not max width of 100%
 #footer {
   margin-top: 2%;
   background-color: black;
-  padding-top: 4%;
+  padding-top: 2%;
   position: relative;
 }
 
 h5{
   color: white;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 h6 {
@@ -134,15 +135,16 @@ h6 {
   text-align: center;
 }
 
-#boss {
+/* #boss {
 display: inline-block;
 left: 2%;
-position: relative
+position: relative;
 }
 #developers {
   display: inline-block;
   position: absolute;
-  right: 35%;
+  right: 32.5%;
+  top: 2.5%;
   column-span: 2,3,4,5;
   color: white;
-}
+} */

@@ -1,0 +1,43 @@
+/* Nav Bar */
+
+.navbar {
+}
+
+.img.image_nav {
+  height: 60px;
+  width: 200px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#navbarNav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.nav-link {
+  color: rgb(90, 85, 85) !important;
+  font-weight: bold;
+}
+
+
+body, html {
+    height: 100%;
+}
+
+.bg {
+    /* The image used */
+    background-image: url("https://cnet2.cbsistatic.com/img/3IKVLG263cYmMOHu91WPZ3Re-uE=/fit-in/970x0/2016/06/30/100535e1-d782-4405-aa5f-31cc0d28f8d3/apple-music-vs-spotify-1.jpg");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
