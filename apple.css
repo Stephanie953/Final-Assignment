@@ -172,21 +172,26 @@ position: relative;
 z-index:-2;
 }
 
-#video-background { 
-position: fixed;
+video { 
+
+position: absolute;
+margin: 0;
 top: 0;
 right: 0;
 bottom: 0;
 left: 0;
 overflow: hidden;
 z-index: -1;
-width:100%;
-height:800px;
+max-width:113%;
+height:3000px;
+margin-left: -70px;
+margin-top: -1150px;
 }
+
+
 .titlevid {
 color:rgb(10, 10, 10);
 font-size: 70px;
-
 }
 
 /* Table */
@@ -194,6 +199,9 @@ font-size: 70px;
 box-sizing: border-box;
 }
 
+.table {
+  margin-top: -80px;
+}
 .columns {
 float: left;
 width: 33.3%;
@@ -217,12 +225,14 @@ box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 background-color: rgb(95, 95, 95);
 color: white;
 font-size: 25px;
+opacity: 0.5;
 }
 
 .price li {
 border-bottom: 1px solid #eee;
 padding: 20px;
 text-align: center;
+opacity: 0.5;
 }
 
 .price .grey {
@@ -242,10 +252,20 @@ font-size: 18px;
 
 @media only screen and (max-width: 600px) {
 .columns {
-    width: 100%;
+    width: auto;
 }
 }
 /*First API */
+
+#api_grid{
+  margin-top: -180px;
+  height: fit-content;
+  width: 100%;
+}
+
+.row{
+  width: 100%;
+}
 .inputFirstApi {
   background-color: white;
   width: 42%;
@@ -290,10 +310,22 @@ font-size: 18px;
 }
 
 #table {
-   position: absolute;
+   position: relative;
    margin-left: 20px;
    font-size: 12px;
    margin-top: 20px;
+   height: fit-content;
+   float: left;
+}
+
+#API2{
+  position: relative;
+  margin-left: 25px;
+}
+#imageAlbum{
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /*footer*/
