@@ -1,6 +1,7 @@
 /* Nav Bar */
 
 .navbar {
+  font-family: Poppins, Palatino, serif;}
 }
 
 .img.image_nav {
@@ -40,4 +41,36 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+/* Footer */
+#footer {
+font-family: Poppins, Palatino, serif;}
+
+.card-header {
+  height: 50px;
+}
+
+.card-footer .text-muted {
+  display:flex;
+
+}
+
+.container.footer {
+margin-top: 2%;
+margin-bottom: 2%;
+}
+
+.row.footer {
+justify-content: space-around;
+}
+
+li{
+margin-top: 10%;
+text-align: left;
+list-style-type:none;
+}
+
+li a{
+  color: black;
 }

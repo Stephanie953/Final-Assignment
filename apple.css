@@ -1,6 +1,7 @@
 /* Nav Bar */
 
 .navbar {
+  font-family: Poppins, Palatino, serif;}
 }
 
 .img.image_nav {
@@ -49,7 +50,7 @@ position: fixed;
 bottom:90%;
 left:5%;
 position:absolute;
-font-family: "Times New Roman", Times, serif;
+font-family: Poppins, Palatino, serif;}
 }
 .button1 {
 border-radius: 4px;
@@ -180,7 +181,7 @@ position: relative;
 z-index:-2;
 }
 
-#video-background { 
+#video-background {
 position: fixed;
 top: 0;
 right: 0;
@@ -298,6 +299,41 @@ font-size: 18px;
    border-color: rgb(0,123,255);
 }
 
+/* Footer */
+#footer {
+font-family: Poppins, Palatino, serif;}
+
+.card-header {
+  height: 50px;
+}
+
+.card-footer .text-muted {
+  display:flex;
+
+}
+
+.container.footer {
+margin-top: 2%;
+margin-bottom: 1%;
+}
+
+.row.footer {
+justify-content: space-around;
+}
+
+li{
+margin-top: 10%;
+text-align: left;
+list-style-type:none;
+}
+
+li a{
+  color: black;
+
+}
+
+
+/* Styling members
 #table {
    position: absolute;
    margin-left: 20px;
@@ -305,7 +341,7 @@ font-size: 18px;
    margin-top: 20px;
 }
 
-/*footer*/
+footer
 #footer {
   margin-top: 2%;
   background-color: black;
@@ -324,7 +360,7 @@ h6 {
   text-align: center;
 }
 
-/* #boss {
+#boss {
 display: inline-block;
 left: 2%;
 position: relative;
