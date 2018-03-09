@@ -175,7 +175,7 @@ height: 200px;
 background-color: white;
 }
 
-/* video { 
+video { 
 
 position: absolute;
 margin: 0;
@@ -189,7 +189,7 @@ max-width:113%;
 height:3000px;
 margin-left: -70px;
 margin-top: -1150px;
-} */
+} 
 
 
 .titlevid {
@@ -252,13 +252,17 @@ height: 100px;
 
 .button5 {
 background-color: rgb(51, 51, 51);
-border: none;
+border: solid;
+border-radius: 5px;
+border-color: rgb(51, 51, 51);
+padding: 2px;
+margin-top: 5%;
 color: white;
-padding: 10px 25px;
 text-align: center;
 text-decoration: none;
-font-size: 18px;
+font-size: 20px;
 font-family: Poppins, Palatino, serif;
+font-family: bold;
 }
 
 @media only screen and (max-width: 600px) {
@@ -328,6 +332,11 @@ font-family: Poppins, Palatino, serif;
   opacity: 0.7;
 }
 
+#table {
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
 /* API 2 */
 
 #album{
@@ -338,14 +347,21 @@ font-family: Poppins, Palatino, serif;
 
 #albumButton {
   margin-top: 3px;
-  margin-left: 20px;
   font-size: 14px;
+  margin-left:20px;
   font-family: Poppins, Palatino, serif;
   font-weight: bold;
   background-color: rgb(95, 95, 95);
   border-color:  rgb(95, 95, 95);
   opacity: 0.7;
 }
+
+#imageAlbum{
+  margin-left: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 /* Footer */
 #footer {
 font-family: Poppins, Palatino, serif;}
@@ -380,27 +396,9 @@ li a{
 }
 
 
-/* Styling members
-#table {
-   position: relative;
-   margin-left: 20px;
-   font-size: 12px;
-   margin-top: 20px;
-   height: fit-content;
-   float: left;
-}
+/*Styling members*/
 
-#API2{
-  position: relative;
-  margin-left: 25px;
-}
-#imageAlbum{
-  margin-left: 100px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-footer
+/*footer
 #footer {
   margin-top: 2%;
   background-color: black;
