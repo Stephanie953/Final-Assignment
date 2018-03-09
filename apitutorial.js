@@ -11,7 +11,7 @@ $(document).ready(function() {
             url: "https://itunes.apple.com/search?entity=song&country=us&limit=" + noOfSongs + "&term=" + artist
         }).done(response => {
             let res = JSON.parse(response);
-          
+
             let resultsarray = res.results;
             for (let i = 0; i < resultsarray.length; i++) {
                 songs.push(res.results[i].trackName);
@@ -19,13 +19,13 @@ $(document).ready(function() {
                 songPrices.push(res.results[i].trackPrice);
                 soundPreviews.push(res.results[i].previewUrl);
             }
-      
+
             let tableHeader = "<thead><tr><th scope='col'>#</th><th scope='col'>Song</th><th scope='col'>Album</th><th scope='col'>Price</th><th scope='col'>Preview</th></tr></thead>";
 
             let tableRow = [];
 
             for (let i = 0; i < resultsarray.length; i++) {
-                tableRow.push("<tr><th scope='row'>" + (i+1) + "</th><td>" + songs[i] + "</td><td>" + albums[i] + "</td><td>$"+ songPrices[i] + "</td><td>" + 
+                tableRow.push("<tr><th scope='row'>" + (i+1) + "</th><td>" + songs[i] + "</td><td>" + albums[i] + "</td><td>$"+ songPrices[i] + "</td><td>" +
                 "<audio controls><source src=" + soundPreviews[i] + "/></audio></td></tr>");
             }
 
@@ -40,7 +40,7 @@ $(document).ready(function() {
         let albumResult;
 
         $.ajax({
-            url: "https://itunes.apple.com/search?entity=album&limit=1&term=" + album 
+            url: "https://itunes.apple.com/search?entity=album&limit=1&term=" + album
         }).done(response => {
             let res = JSON.parse(response);
 
@@ -57,6 +57,3 @@ $(document).ready(function() {
         });
     });
 });
-
-
-
