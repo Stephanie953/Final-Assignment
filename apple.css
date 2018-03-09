@@ -170,10 +170,12 @@ right: 0;
 /* Jumbotron */
 .jumbotron{
 position: relative;
-z-index:-2;
+margin: 0px;
+height: 200px;
+background-color: white;
 }
 
-video { 
+/* video { 
 
 position: absolute;
 margin: 0;
@@ -187,12 +189,14 @@ max-width:113%;
 height:3000px;
 margin-left: -70px;
 margin-top: -1150px;
-}
+} */
 
 
 .titlevid {
 color:rgb(10, 10, 10);
-font-size: 70px;
+font-size: 80px;
+font-family: Poppins, Palatino, serif;
+text-align: center;
 }
 
 /* Table */
@@ -200,13 +204,12 @@ font-size: 70px;
 box-sizing: border-box;
 }
 
-.table {
-  margin-top: -80px;
-}
 .columns {
 float: left;
-width: 33.3%;
-padding: 8px;
+width: 32%;
+padding: 16px;
+margin-top: 16px;
+margin-left: 1%;
 }
 
 .price {
@@ -225,20 +228,26 @@ box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
 .price .header {
 background-color: rgb(95, 95, 95);
 color: white;
-font-size: 25px;
+font-size: 30px;
+font-family: Poppins, Palatino, serif;
 opacity: 0.5;
+text-align: center;
 }
 
 .price li {
 border-bottom: 1px solid #eee;
-padding: 20px;
+padding: 25px;
 text-align: center;
 opacity: 0.5;
+height: 100px;
+width: auto;
 }
 
 .price .grey {
 background-color: #eee;
 font-size: 20px;
+font-family: Poppins, Palatino, serif;
+height: 100px;
 }
 
 .button5 {
@@ -249,6 +258,7 @@ padding: 10px 25px;
 text-align: center;
 text-decoration: none;
 font-size: 18px;
+font-family: Poppins, Palatino, serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -266,12 +276,15 @@ font-size: 18px;
 
 .row{
   width: 100%;
+  margin-left: 1px;
+  margin-bottom: 10px;
 }
 .inputFirstApi {
   background-color: white;
   width: 42%;
   position: relative;
   height: 15%;
+  font-family: Poppins, Palatino, serif;
 }
 
 .searchItems {
@@ -287,6 +300,7 @@ font-size: 18px;
    opacity: 0.8;
    text-align: left;
    margin: 10px 20px;
+   font-family: Poppins, Palatino, serif;
 }
 
 .firstAPI {
@@ -297,19 +311,41 @@ font-size: 18px;
    width: 250px;
    margin-left: 20px;
    font-size: 14px;
+   font-family: Poppins, Palatino, serif;
 }
 
 #submitButton {
-   margin-left: 20px;
-   height: 31px;
-   padding-top: 4px;
-   padding-bottom: 4px;
-   font-size: 14px;
-   font-weight: bold;
-   background-color:rgb(0,123,255);
-   border-color: rgb(0,123,255);
+  margin-top:3px;
+  margin-left: 20px;
+  height: 31px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(95, 95, 95);
+  border-color:  rgb(95, 95, 95);
+  font-family: Poppins, Palatino, serif;
+  opacity: 0.7;
 }
 
+/* API 2 */
+
+#album{
+  font-size: 14px;
+  font-family: Poppins, Palatino, serif;
+  margin-left: 20px;
+}
+
+#albumButton {
+  margin-top: 3px;
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: Poppins, Palatino, serif;
+  font-weight: bold;
+  background-color: rgb(95, 95, 95);
+  border-color:  rgb(95, 95, 95);
+  opacity: 0.7;
+}
 /* Footer */
 #footer {
 font-family: Poppins, Palatino, serif;}
