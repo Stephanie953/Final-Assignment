@@ -28,24 +28,53 @@
 
 body, html {
     height: 100%;
+    font-family: Poppins, Palatino, serif;}
 }
 
 .bg {
     /* The image used */
-    background-image: url("https://cnet2.cbsistatic.com/img/3IKVLG263cYmMOHu91WPZ3Re-uE=/fit-in/970x0/2016/06/30/100535e1-d782-4405-aa5f-31cc0d28f8d3/apple-music-vs-spotify-1.jpg");
+    /* background-image: url("https://support.apple.com/library/content/dam/edam/applecare/images/nl_NL/mac_apps/itunes/macos-itunes12-5-itunes-match-hero.jpg"); */
+    background-image: linear-gradient(rgb(240, 55, 165) -60%, rgb(250, 230, 45) 140%);
 
     /* Full height */
-    height: 100%;
+    height: fit-content;
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+h1{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 30px;
+}
+
+.member {
+  margin-top: 4%;
+}
+
+.col-lg-6.linkedIn {
+  margin-bottom: 6%;
+}
+
+.fab.fa-linkedin-in.fa-2x{
+  color: grey;
+}
+
+.icon:hover {
+box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+path{
+  color: rgb(223, 223, 223);
 }
 
 /* Footer */
 #footer {
-font-family: Poppins, Palatino, serif;}
+font-family: Poppins, Palatino, serif;
+max-width: 100%;
+}
 
 .card-header {
   height: 50px;
@@ -57,12 +86,17 @@ font-family: Poppins, Palatino, serif;}
 }
 
 .container.footer {
-margin-top: 2%;
-margin-bottom: 2%;
+padding-top: 2%;
+padding-bottom: 2%;
 }
 
 .row.footer {
-justify-content: space-around;
+justify-content: space-between;
+}
+
+.column.footer {
+  height: 201px;
+  width: 180px;
 }
 
 li{
@@ -72,5 +106,9 @@ list-style-type:none;
 }
 
 li a{
+  color: black;
+}
+
+a:any-link{
   color: black;
 }
