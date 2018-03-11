@@ -1,4 +1,17 @@
 $(document).ready(function() {
+
+    //navbar button javascript
+    $("#navBarButton").on("click", function() {
+        var navBarFlow = document.getElementById("navbarNav");
+        if (navBarFlow.style.display === "none") {
+            navBarFlow.style.display = "flex";
+            navBarFlow.style.justifyContent = "end-right";
+        } else {
+            navBarFlow.style.display = "none";
+        }
+    });
+
+    //API 1 javascript code 
     $("#submitButton").on("click", function() {
         let artist = $("#artists").val();
         let noOfSongs = $("#noOfSongs").val();
@@ -35,6 +48,7 @@ $(document).ready(function() {
         });
     });
 
+    //API 2 javascript code
     $("#albumButton").on("click", function() {
         let album = $("#album").val();
         let albumResult;
@@ -44,13 +58,14 @@ $(document).ready(function() {
         }).done(response => {
             let res = JSON.parse(response);
 
+            console.log(res);
+
             let resultsarray = res.results;
             for (let i = 0; i < resultsarray.length; i++) {
-                albumResult = res.results[i].artworkUrl100;
+                albumResult = res.results[i].artworkUrl100.replace("100x100bb.jpg", "300x300bb.jpg");
             }
 
-
-            let albumPhoto = "<img src='" + albumResult +"' alt='Mountain View'>";
+            let albumPhoto = "<img src='" + albumResult +"'>";
 
             $("#imageAlbum").empty();
             $("#imageAlbum").append(albumPhoto);
